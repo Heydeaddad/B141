@@ -1,4 +1,4 @@
-# Import necessary libraries
+
 import pandas as pd
 import re
 import string
@@ -21,13 +21,13 @@ nltk.download('vader_lexicon')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-# Load the dataset from the provided URL
+# Load the dataset 
 url = 'https://raw.githubusercontent.com/Heydeaddad/dataset/main/AB_NYC_2019.csv'
 data = pd.read_csv(url)
 print(data.columns)
 print(data.head())
 
-# Select the text column for analysis
+# Select the text column 
 text_column = 'name'
 
 # Data Preprocessing
